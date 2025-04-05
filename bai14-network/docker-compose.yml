@@ -1,0 +1,16 @@
+version: "3"
+services:
+  service1:
+    image: alpine
+    command: ["sleep", "3600"]
+    networks:
+      - custom_net
+
+  service2:
+    image: alpine
+    command: ["sleep", "3600"]
+    networks:
+      - custom_net
+
+networks:
+  custom_net:
